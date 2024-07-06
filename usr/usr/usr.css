@@ -1,0 +1,172 @@
+  body {
+    overflow: hidden;
+    background-color: black;
+  }
+  .mainbox {
+    height: 350px;
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: 1;
+  }
+  
+  .mainop {
+    height: 350px;
+    width: 450px;
+    border: 2px solid #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: 1;
+    background-color: black;
+    opacity: 0.5;
+  }
+
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    filter: blur(7px);
+    -webkit-filter: blur(7px);
+    z-index: -1;
+  }
+
+  .foto {
+    border-radius: 100%;
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90px;
+    z-index: 3;
+  }
+
+  h1, h2 {
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    color: #f6f6f6;
+    font-family: monospace;
+  }
+
+  h1 {
+    font-weight: 400;
+    top: 36%;
+    left: 50%;
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-weight: 400;
+    top: 45%;
+    left: 50%;
+    font-size: 0.95rem;
+  }
+
+  #content {
+    display: none;
+  }
+  #clickArea {
+    cursor: pointer;
+  }
+
+  .ani {
+    color: white;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    transition: color 0.3s, transform 0.3s;
+  }
+
+  .ani:hover {
+    color: lightgray;
+    transform: scale(1.2);
+  }
+
+  .boxicons {
+    height: 40px;
+    width: 150px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+  }
+
+  .mail {
+    fill: white;
+    top: -15%;
+    left: 0%;
+    transform: translate(50%, 50%);
+    position: absolute;
+    align-content: center;
+    transition: all 0.5s;
+    transform-origin: 0%;
+  }
+
+  .mail:hover {
+    transform: scale(1.5);
+  }
+
+  .dc {
+    fill: white;
+    top: -15%;
+    left: 33%;
+    transform: translate(50%, 50%);
+    position: absolute;
+    align-content: center;
+    transition: all 0.5s;
+    transform-origin: 0%;
+  }
+
+  .dc:hover {
+    transform: scale(1.5);
+  }
+
+  .bin {
+    fill: white;
+    top: -15%;
+    left: 68%;
+    transform: translate(50%, 50%);
+    position: absolute;
+    align-content: center;
+    transition: all 0.5s;
+    transform-origin: 0%;
+  }
+
+  .bin:hover {
+    transform: scale(1.5);
+  }
+
+  svg {
+    fill: white;
+  }
