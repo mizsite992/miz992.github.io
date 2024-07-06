@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.title = displayedText;
 
         if (!isDeleting && currentIndex === fullText.length) {
-            setTimeout(() => isDeleting = true, 1500);  // Pause before deleting
+            setTimeout(() => isDeleting = true, 1500);
         } else if (isDeleting && currentIndex === 1) {
             isDeleting = false;
         }
